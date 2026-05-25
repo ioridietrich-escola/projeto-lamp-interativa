@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lâmpada Interativa</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <h1>Teste de Lâmpada</h1>
+
+  <!--Botão ligar-->
+  <div class="ligar">
+    <button onclick="ligar()">Ligar</button>
+  </div>
+  <!-- Imagem -->
+  <div class="lamp">
+    <img id="lampada" src="./img/luz-apagada.gif" width="200">
+  </div>
+  <br><br>
+
+  <!-- Botões -->
+  <div class="desligar">
+    <button onclick="desligar()">Desligar</button>
+  </div>
+  <script>
+    function ligar() {
+      document.getElementById("lampada").src = "./img/luz-ligada.gif";
+    }
+
+    function desligar() {
+      document.getElementById("lampada").src = "./img/luz-apagada.gif";
+    }
+  </script>
+
+</body>
+
+</html>
